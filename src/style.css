@@ -63,7 +63,6 @@ form {
   line-height: 2;
   border-left: 3px solid #3a5a40;
   box-shadow: 0 20px 60px rgba(65, 60, 100, 0.08);
-  display: none;
 }
 footer {
   text-align: center;
@@ -75,4 +74,18 @@ a {
 }
 .hidden {
   display: none;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
